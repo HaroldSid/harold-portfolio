@@ -30,7 +30,7 @@ export function Header() {
     setMobileOpen(false);
     // Only delay scroll when closing the mobile menu so touch devices don't ignore it
     if (mobileOpen) {
-      window.setTimeout(scrollToSection, 300);
+      window.setTimeout(scrollToSection, 10);
     } else {
       scrollToSection();
     }
