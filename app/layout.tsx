@@ -20,12 +20,12 @@ export const metadata: Metadata = {
   title: "Harold Delacroix — Freelance Developer",
   description:
     "I build web applications, business tools, and custom software. Freelance developer available for hire.",
-  metadataBase: new URL("https://harolddelacroix.dev"),
+  metadataBase: new URL("https://haroldelacroix.dev"),
   openGraph: {
     title: "Harold Delacroix — Freelance Developer",
     description:
       "I build web applications, business tools, and custom software.",
-    url: "https://harolddelacroix.dev",
+    url: "https://haroldelacroix.dev",
     siteName: "Harold Delacroix",
     locale: "en_US",
     type: "website",

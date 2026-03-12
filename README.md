@@ -1,6 +1,6 @@
 # Harold Delacroix — Portfolio
 
-Personal developer portfolio for [harolddelacroix.dev](https://harolddelacroix.dev).
+Personal developer portfolio for [haroldelacroix.dev](https://haroldelacroix.dev).
 
 Built with **Next.js 15 (App Router)**, **React**, **Tailwind CSS**, and **Framer Motion**.
 
@@ -28,7 +28,7 @@ harold-portfolio/
 │   ├── layout.tsx          # Root layout (fonts, metadata, dark mode)
 │   ├── page.tsx            # Home page
 │   ├── globals.css         # Tailwind + global styles
-│   └── api/contact/        # Contact form API route (stub — add email service)
+│   └── api/contact/        # Contact form → Resend (emails to you)
 ├── components/
 │   ├── layout/             # Header, Footer
 │   ├── sections/           # Hero, Services, Projects, TechStack, About, Contact
@@ -42,10 +42,20 @@ harold-portfolio/
 
 - **Content**: Edit `lib/constants.ts` to update projects, services, tech stack, and social links.
 - **Colours**: The accent colour is `cyan-400` (`#22d3ee`). Change it in `tailwind.config.ts` and `globals.css`.
-- **Contact form**: The `/api/contact` route is a stub. Wire it up with [Resend](https://resend.com) or another email service.
+- **Contact form**: Uses [Resend](https://resend.com). Copy `.env.example` to `.env.local`, add your `RESEND_API_KEY` ([get one here](https://resend.com/api-keys)), and messages will be sent to `harold.delacroix@gmail.com`. Optional: set `CONTACT_TO_EMAIL` and `CONTACT_FROM_EMAIL` (use a verified domain in Resend for production).
+
+## Contact form (Resend)
+
+1. Copy `.env.example` to `.env.local`.
+2. Sign up at [resend.com](https://resend.com) and create an API key at [resend.com/api-keys](https://resend.com/api-keys).
+3. Set `RESEND_API_KEY=re_xxxx...` in `.env.local`.
+4. Run `npm run dev` — the "Send message" button will deliver emails to `harold.delacroix@gmail.com`. The sender uses Resend’s default domain until you verify your own (e.g. `contact@haroldelacroix.dev`) in Resend and set `CONTACT_FROM_EMAIL`.
+
+On Vercel, add `RESEND_API_KEY` (and optionally `CONTACT_TO_EMAIL` / `CONTACT_FROM_EMAIL`) in Project Settings → Environment Variables.
 
 ## Deployment
 
 1. Push to GitHub.
 2. Import the repo in [Vercel](https://vercel.com) (zero config for Next.js).
-3. Add custom domain `harolddelacroix.dev` in Vercel project settings and follow the DNS instructions.
+3. Add `RESEND_API_KEY` in Vercel environment variables.
+4. Add custom domain `haroldelacroix.dev` in Vercel project settings and follow the DNS instructions.

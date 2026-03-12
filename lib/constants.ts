@@ -81,6 +81,7 @@ export const TECH_STACK = [
     icon: "Server",
     items: [
       { name: "Java", icon: "☕" },
+      { name: "Spring Boot", icon: "🌱" },
       { name: "Python", icon: "🐍" },
       { name: "Node.js", icon: "⬡" },
     ],
@@ -91,7 +92,8 @@ export const TECH_STACK = [
     items: [
       { name: "React", icon: "⚛" },
       { name: "Next.js", icon: "▲" },
-      { name: "TypeScript", icon: "TS" },
+      { name: "Angular", icon: "⟲" },
+      { name: "Flutter", icon: "🦋" },
     ],
   },
   {
@@ -107,7 +109,7 @@ export const TECH_STACK = [
 // ─── Social links ─────────────────────────────────────────────────────────────
 
 export const SOCIAL_LINKS = {
-  github: "https://github.com/harolddelacroix",
-  linkedin: "https://linkedin.com/in/harolddelacroix",
-  email: "mailto:hello@harolddelacroix.dev",
+  github: "https://github.com/HaroldSid",
+  linkedin: "https://www.linkedin.com/in/harold-delacroix/",
+  email: "mailto:harold.delacroix@gmail.com",
 };

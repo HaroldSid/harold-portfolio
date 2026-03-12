@@ -143,9 +143,23 @@ export function Contact() {
             </h3>
             <ul className="flex flex-col gap-4">
               {[
-                { href: SOCIAL_LINKS.email, Icon: Mail, label: "hello@harolddelacroix.dev" },
-                { href: SOCIAL_LINKS.github, Icon: Github, label: "github.com/harolddelacroix", external: true },
-                { href: SOCIAL_LINKS.linkedin, Icon: Linkedin, label: "linkedin.com/in/harolddelacroix", external: true },
+                {
+                  href: SOCIAL_LINKS.email,
+                  Icon: Mail,
+                  label: "harold.delacroix@gmail.com",
+                },
+                {
+                  href: SOCIAL_LINKS.github,
+                  Icon: Github,
+                  label: "github.com/HaroldSid",
+                  external: true,
+                },
+                {
+                  href: SOCIAL_LINKS.linkedin,
+                  Icon: Linkedin,
+                  label: "linkedin.com/in/harold-delacroix",
+                  external: true,
+                },
               ].map(({ href, Icon, label, external }) => (
                 <li key={href}>
                   <a

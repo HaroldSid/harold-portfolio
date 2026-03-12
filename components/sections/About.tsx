@@ -4,10 +4,14 @@ import { motion } from "framer-motion";
 import { SectionWrapper } from "@/components/ui/SectionWrapper";
 import { Button } from "@/components/ui/Button";
 
+// High-level stats reflecting Harold's CV:
+// - Several years in industrial automation and client-facing roles
+// - A few years focused on software development
+// - Bilingual (French / English), based in Brussels
 const highlights = [
-  { value: "5+", label: "Years experience" },
-  { value: "20+", label: "Projects delivered" },
-  { value: "100%", label: "Remote-friendly" },
+  { value: "3+", label: "Years in software" },
+  { value: "5+", label: "Years with clients & industry" },
+  { value: "2", label: "Languages (FR / EN)" },
 ];
 
 export function About() {
@@ -28,22 +32,29 @@ export function About() {
         >
           <p className="text-base text-zinc-600 dark:text-zinc-400 leading-relaxed sm:text-lg">
             I&apos;m{" "}
-            <span className="font-semibold text-zinc-900 dark:text-zinc-100">Harold Delacroix</span>,
-            a backend-focused freelance developer who builds custom tools and
-            applications for businesses. I specialise in turning complex
-            requirements into clean, maintainable software — whether that&apos;s
-            an internal ERP module, a full-stack web application, or a
-            data-driven dashboard.
+            <span className="font-semibold text-zinc-900 dark:text-zinc-100">
+              Harold Delacroix
+            </span>
+            , a Brussels-based developer with a background in industrial
+            engineering and automation. After several years delivering and
+            validating monitoring systems on client sites, I moved into software
+            development and now focus on building backend services, internal
+            tools, and web applications for teams and businesses.
           </p>
           <p className="text-base text-zinc-600 dark:text-zinc-400 leading-relaxed">
-            My background spans Java and Python on the server side, through to
-            React and Next.js on the frontend, with PostgreSQL as my go-to
-            database. I work independently, communicate clearly, and deliver on
-            time.
+            I&apos;ve worked on Java backends, geographic and banking
+            applications, HR tools, and public-sector projects, collaborating
+            closely with DevOps, support, and non-technical stakeholders. My
+            stack spans Java / Spring Boot, Python, and Node.js on the server
+            side, through to React, Next.js, and modern front-end tooling —
+            usually with PostgreSQL or SQL databases underneath.
           </p>
           <p className="text-base text-zinc-600 dark:text-zinc-400 leading-relaxed">
-            If you have a problem that needs a software solution, I&apos;d love
-            to hear about it.
+            I enjoy understanding real-world constraints, translating them into
+            clear requirements, and turning those into robust features that are
+            easy to maintain. If you need someone who can talk to users, reason
+            about systems, and ship code, I&apos;d love to hear about your
+            project.
           </p>
 
           <div className="mt-2">
@@ -67,7 +78,11 @@ export function About() {
               initial={{ opacity: 0, y: 16 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.45, delay: 0.15 + i * 0.08, ease: "easeOut" }}
+              transition={{
+                duration: 0.45,
+                delay: 0.15 + i * 0.08,
+                ease: "easeOut",
+              }}
               className="flex items-center gap-5 rounded-2xl
                          border border-black/[0.07] bg-white shadow-sm
                          dark:border-white/[0.07] dark:bg-white/[0.02] dark:shadow-none
