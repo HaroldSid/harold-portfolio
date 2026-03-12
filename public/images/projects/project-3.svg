@@ -1,0 +1,24 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675">
+  <rect width="1200" height="675" fill="#0a0c0a"/>
+  <rect x="60" y="40" width="1080" height="560" rx="12" fill="#0f110f"/>
+  <rect x="60" y="40" width="1080" height="44" rx="12" fill="#161a16"/>
+  <rect x="60" y="72" width="1080" height="12" fill="#161a16"/>
+  <circle cx="88" cy="62" r="7" fill="#ef4444"/>
+  <circle cx="110" cy="62" r="7" fill="#eab308"/>
+  <circle cx="132" cy="62" r="7" fill="#22c55e"/>
+  <text x="600" y="67" font-family="monospace" font-size="13" fill="#52525b" text-anchor="middle">python snake.py</text>
+  <text x="80" y="120" font-family="monospace" font-size="13" fill="#22c55e">$ python snake.py</text>
+  <text x="80" y="145" font-family="monospace" font-size="13" fill="#a3e635">Loading game... ████████████ 100%</text>
+  <text x="80" y="180" font-family="monospace" font-size="13" fill="#71717a">┌──────────────────────────────┐</text>
+  <text x="80" y="200" font-family="monospace" font-size="13" fill="#71717a">│  🐍  PYTHON SNAKE GAME       │</text>
+  <text x="80" y="220" font-family="monospace" font-size="13" fill="#71717a">│  Score: 42   High: 98        │</text>
+  <text x="80" y="240" font-family="monospace" font-size="13" fill="#71717a">└──────────────────────────────┘</text>
+  <text x="80" y="280" font-family="monospace" font-size="12" fill="#3f3f46">  ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░</text>
+  <text x="80" y="300" font-family="monospace" font-size="12" fill="#3f3f46">  ░░░░░░░░░░░░████████░░░░░░░░░░</text>
+  <text x="80" y="320" font-family="monospace" font-size="12" fill="#3f3f46">  ░░░░░░░░░░░░█░░░░░░█░░░░░░░░░░</text>
+  <text x="80" y="340" font-family="monospace" font-size="12" fill="#a3e635">  ░░░░░░████████░░░░░█░░░░░░░░░░</text>
+  <text x="80" y="360" font-family="monospace" font-size="12" fill="#3f3f46">  ░░░░░░░░░░░░░░░░░░░█░░░░●░░░░░</text>
+  <text x="80" y="380" font-family="monospace" font-size="12" fill="#3f3f46">  ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░</text>
+  <text x="80" y="420" font-family="monospace" font-size="12" fill="#52525b">  [W/A/S/D] Move  [Q] Quit  [R] Restart</text>
+  <text x="600" y="640" font-family="system-ui,sans-serif" font-size="14" fill="#52525b" text-anchor="middle">Python Mini Games</text>
+</svg>
