@@ -22,10 +22,18 @@ export function Header() {
   }, []);
 
   const handleNavClick = (href: string) => {
-    setMobileOpen(false);
     const id = href.replace("#", "");
-    const el = document.getElementById(id);
-    if (el) el.scrollIntoView({ behavior: "smooth" });
+    const scrollToSection = () => {
+      const el = document.getElementById(id);
+      if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
+    };
+    setMobileOpen(false);
+    // Only delay scroll when closing the mobile menu so touch devices don't ignore it
+    if (mobileOpen) {
+      window.setTimeout(scrollToSection, 300);
+    } else {
+      scrollToSection();
+    }
   };
 
   return (
