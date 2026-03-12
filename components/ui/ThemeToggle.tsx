@@ -25,11 +25,11 @@ export function ThemeToggle() {
       onClick={() => setTheme(isDark ? "light" : "dark")}
       aria-label={isDark ? "Switch to light mode" : "Switch to dark mode"}
       className="relative flex h-9 w-9 items-center justify-center rounded-lg
-                 border border-black/[0.08] bg-black/[0.04]
+                 border border-slate-300/80 bg-blue-50/80
                  dark:border-white/[0.08] dark:bg-white/[0.04]
-                 text-zinc-600 dark:text-zinc-400
-                 hover:text-zinc-900 dark:hover:text-zinc-100
-                 hover:bg-black/[0.08] dark:hover:bg-white/[0.08]
+                 text-slate-600 dark:text-zinc-400
+                 hover:text-slate-800 dark:hover:text-zinc-100
+                 hover:bg-slate-200/80 dark:hover:bg-white/[0.08]
                  transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-accent/50"
     >
       <AnimatePresence mode="wait" initial={false}>

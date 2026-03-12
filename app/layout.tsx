@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Space_Grotesk, Geist } from "next/font/google";
 import { ThemeProvider } from "@/components/layout/ThemeProvider";
+import { LanguageProvider } from "@/components/contexts/LanguageContext";
 import "./globals.css";
 
 const spaceGrotesk = Space_Grotesk({
@@ -51,7 +52,7 @@ export default function RootLayout({
       suppressHydrationWarning
       className={`${spaceGrotesk.variable} ${geistSans.variable}`}
     >
-      <body className="bg-zinc-50 dark:bg-[#0a0a0a] text-zinc-900 dark:text-zinc-100 antialiased transition-colors duration-300">
+      <body className="bg-blue-100 dark:bg-[#0a0a0a] text-slate-800 dark:text-zinc-100 antialiased transition-colors duration-300">
         {/* defaultTheme="dark" starts in dark mode; storageKey persists choice */}
         <ThemeProvider
           attribute="class"
@@ -59,7 +60,7 @@ export default function RootLayout({
           enableSystem={false}
           storageKey="hd-theme"
         >
-          {children}
+          <LanguageProvider>{children}</LanguageProvider>
         </ThemeProvider>
       </body>
     </html>

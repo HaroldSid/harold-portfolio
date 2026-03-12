@@ -35,12 +35,12 @@ export function SectionWrapper({
           >
             {label && <p className="section-label">{label}</p>}
             {heading && (
-              <h2 className="font-heading text-3xl font-bold text-zinc-900 dark:text-zinc-100 sm:text-4xl md:text-5xl">
+              <h2 className="font-heading text-3xl font-bold text-slate-800 dark:text-zinc-100 sm:text-4xl md:text-5xl">
                 {heading}
               </h2>
             )}
             {subheading && (
-              <p className="mt-4 max-w-2xl text-zinc-500 dark:text-zinc-400 text-base sm:text-lg leading-relaxed mx-auto">
+              <p className="mt-4 max-w-2xl text-slate-600 dark:text-zinc-400 text-base sm:text-lg leading-relaxed mx-auto">
                 {subheading}
               </p>
             )}

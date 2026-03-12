@@ -31,7 +31,7 @@ export function Card({
             }
           : {}
       }
-      className={`rounded-xl border border-black/[0.07] bg-white dark:border-white/[0.07] dark:bg-white/[0.03] p-6 transition-colors ${className}`}
+      className={`rounded-xl border border-slate-300/70 bg-blue-50 dark:border-white/[0.07] dark:bg-white/[0.03] p-6 transition-colors ${className}`}
     >
       {children}
     </motion.div>

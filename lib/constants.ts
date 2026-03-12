@@ -8,7 +8,6 @@ export const NAV_LINKS = [
   { label: "Projects", href: "#projects" },
   { label: "Tech Stack", href: "#tech" },
   { label: "About", href: "#about" },
-  { label: "Contact", href: "#contact" },
 ];
 
 // ─── Services ────────────────────────────────────────────────────────────────

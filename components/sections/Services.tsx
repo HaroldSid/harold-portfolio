@@ -4,21 +4,24 @@ import { Monitor, BarChart2, Globe } from "lucide-react";
 import { motion } from "framer-motion";
 import { SectionWrapper } from "@/components/ui/SectionWrapper";
 import { SERVICES } from "@/lib/constants";
+import { useLanguage } from "@/components/contexts/LanguageContext";
 import type { LucideIcon } from "lucide-react";
 
 const iconMap: Record<string, LucideIcon> = { Monitor, BarChart2, Globe };
 
 export function Services() {
+  const { t } = useLanguage();
   return (
     <SectionWrapper
       id="services"
-      label="What I do"
-      heading="Services"
-      subheading="From idea to production — I cover the full spectrum of custom software development."
+      label={t.services.label}
+      heading={t.services.heading}
+      subheading={t.services.subheading}
     >
       <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {SERVICES.map((service, i) => {
           const Icon = iconMap[service.icon];
+          const item = t.services.items[i];
           return (
             <motion.div
               key={service.id}
@@ -32,7 +35,7 @@ export function Services() {
                 boxShadow: "0 0 32px rgba(34, 211, 238, 0.07)",
               }}
               className="group relative flex flex-col gap-5 rounded-2xl
-                         border border-black/[0.07] bg-white
+                         border border-slate-300/70 bg-blue-50
                          dark:border-white/[0.07] dark:bg-white/[0.02]
                          p-8 transition-colors shadow-sm dark:shadow-none"
             >
@@ -43,12 +46,12 @@ export function Services() {
                 {Icon && <Icon size={22} strokeWidth={1.75} />}
               </div>
 
-              <h3 className="font-heading text-lg font-semibold text-zinc-900 dark:text-zinc-100">
-                {service.title}
+              <h3 className="font-heading text-lg font-semibold text-slate-800 dark:text-zinc-100">
+                {item.title}
               </h3>
 
-              <p className="text-sm text-zinc-500 leading-relaxed">
-                {service.description}
+              <p className="text-sm text-slate-600 leading-relaxed">
+                {item.description}
               </p>
 
               {/* Animated bottom border on hover */}
